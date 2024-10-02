@@ -51,4 +51,33 @@ public class excepcionesUsuario {
 
 	}
 
+	public File metodoTres(File directorioPadre, String nombreFichero) throws IOException {
+
+		if (directorioPadre.exists() && directorioPadre.isDirectory()) {
+			File fichero = new File(directorioPadre, nombreFichero + ".txt");
+
+			if (!fichero.exists()) {
+				fichero.createNewFile();
+				System.out.println("Fichero creado");
+				return fichero;
+			} else {
+				System.out.println("El fichero ya existe");
+				return null;
+			}
+
+		} else {
+			return null;
+		}
+	}
+
+	public void metodoCuatro(File fichero, String nuevoDirectorio, String nuevoNombre) {
+		if (fichero.exists()) {
+			File temporal = new File(nuevoDirectorio + "\\" + nuevoNombre);
+			fichero.renameTo(temporal);
+			System.out.println("Fichero movido correctamente");
+		} else {
+			System.out.println("El fichero no existe");
+		}
+
+	}
 }
