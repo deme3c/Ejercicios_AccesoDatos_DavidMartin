@@ -11,19 +11,19 @@ class Ejercicio_3_1_1Test {
 	@Test
 	void escribirCadenaTest() {
 		Ejercicio_3_1_1 ej = new Ejercicio_3_1_1();
-		ej.escribirCadena("./311.txt", "Voy a escribir esta cadena para el primer apartado del ejercicio 311");
+		ej.escribirCadena("./tmp/311.txt", "Voy a escribir esta cadena para el primer apartado del ejercicio 311");
 	}
 	
 	@Test
 	void addNamesTest() {
 		Ejercicio_3_1_1 ej = new Ejercicio_3_1_1();
-		ej.addNames("./311.txt");
+		ej.addNames("./tmp/311.txt");
 	}
 	
 	@Test
 	void leerFicheroTest() {
 		Ejercicio_3_1_1 ej = new Ejercicio_3_1_1();
-		File fichero = new File("./311.txt");
+		File fichero = new File("./tmp/311.txt");
 		ej.leerFichero(fichero);
 	}
 }

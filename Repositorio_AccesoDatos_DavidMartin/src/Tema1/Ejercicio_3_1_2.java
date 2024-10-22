@@ -42,7 +42,7 @@ public class Ejercicio_3_1_2 {
 	}
 
 	public void escribirFile() {
-		File fichero = new File("./312File.txt");
+		File fichero = new File("./tmp/312File.txt");
 		try {
 			FileWriter fw = new FileWriter(fichero);
 			for(int i=0;i<10000;i++) {
@@ -56,7 +56,7 @@ public class Ejercicio_3_1_2 {
 	}
 	
 	public void escribirBuffered() {
-		File fichero = new File("./312Buffered.txt");
+		File fichero = new File("./tmp/312Buffered.txt");
 		try {
 			FileWriter fw = new FileWriter(fichero);
 			BufferedWriter bw = new BufferedWriter(fw);
@@ -72,7 +72,7 @@ public class Ejercicio_3_1_2 {
 	
 
 	public void leerFile() {
-		File fichero = new File("./312File.txt");
+		File fichero = new File("./tmp/312File.txt");
 		try {
 			FileReader fr = new FileReader(fichero);
 			int i;
@@ -87,7 +87,7 @@ public class Ejercicio_3_1_2 {
 	}
 	
 	public void leerBuffered() {
-		File fichero = new File("./312Buffered.txt");
+		File fichero = new File("./tmp/312Buffered.txt");
 		try {
 			FileReader fr = new FileReader(fichero);
 			BufferedReader br = new BufferedReader(fr);
