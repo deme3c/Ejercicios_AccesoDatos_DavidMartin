@@ -11,10 +11,11 @@ import java.io.IOException;
 public class Ejercicio_3_1_2 {
 	/*
 	 * Ejercicio 3.1.2 Implementa una clase con un método que evidencie la
-	 * diferencia de rendimiento entre el uso de las clases FileReader y FileWriter
+	 * diferencia de rendimiento entr9e el uso de las clases FileReader y FileWriter
 	 * y las clases BufferedReader y BufferedWriter. Para los cálculos de tiempo
 	 * puede hacerse uso del método System.currentTimeMillis().
 	 */
+	
 
 	public void comparacionFileAndReader() {
 
@@ -45,7 +46,10 @@ public class Ejercicio_3_1_2 {
 		File fichero = new File("./tmp/312File.txt");
 		try {
 			FileWriter fw = new FileWriter(fichero);
+			String cadena = "dsad";
+			char[] cad = cadena.toCharArray();
 			for(int i=0;i<10000;i++) {
+				fw.write(cad[i]);
 				fw.write("Thats the way it is con File");
 			}
 			fw.close();

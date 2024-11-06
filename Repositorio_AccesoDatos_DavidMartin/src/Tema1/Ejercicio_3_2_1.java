@@ -55,6 +55,7 @@ public class Ejercicio_3_2_1 {
 				}
 				if (!salir) {
 					System.out.println(c);
+					
 				}
 			}
 
