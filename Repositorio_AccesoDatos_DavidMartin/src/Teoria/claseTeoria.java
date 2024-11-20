@@ -1,4 +1,4 @@
-package Tema2;
+package Teoria;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

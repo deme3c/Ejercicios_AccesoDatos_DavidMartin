@@ -11,11 +11,11 @@ import java.sql.Statement;
 
 public class Ejercicio_7_1 {
 
-    private  String url;
-    private  String user;
-    private  String password;
-    private  String rutaCrear;
-    private  String rutaRellenar;
+    private String url;
+    private String user;
+    private String password;
+    private String rutaCrear;
+    private String rutaRellenar;
     
     
     public void mostarDatosPorFechas(String fechaInicio, String fechaFin) {
@@ -46,7 +46,7 @@ public class Ejercicio_7_1 {
 
     	Ejercicio_7_1BBDD ejbd = new Ejercicio_7_1BBDD();
     	Connection con = ejbd.abrirConexion(url, user, password);
-    	ejbd.hacerAlgoEnLaTablaConSentenciaString(modificarDatosSQL, con);
+    	ejbd.executeQuerySQL(modificarDatosSQL, con);
     }
 
 
@@ -55,7 +55,7 @@ public class Ejercicio_7_1 {
         String crearTablaSQL = lecturaSQL(rutaCrear);  
         Ejercicio_7_1BBDD ejbd = new Ejercicio_7_1BBDD();
         Connection con = ejbd.abrirConexion(url, user, password);
-        ejbd.hacerAlgoEnLaTablaConSentenciaString(crearTablaSQL, con);
+        ejbd.executeQuerySQL(crearTablaSQL, con);
     }
     
     
@@ -64,7 +64,7 @@ public class Ejercicio_7_1 {
         String meterDatosSQL = lecturaSQL(rutaRellenar);  
         Ejercicio_7_1BBDD ejbd = new Ejercicio_7_1BBDD();
         Connection con = ejbd.abrirConexion(url, user, password);
-        ejbd.hacerAlgoEnLaTablaConSentenciaString(meterDatosSQL, con);
+        ejbd.executeQuerySQL(meterDatosSQL, con);
     	
     }
 	

@@ -19,7 +19,7 @@ public class Ejercicio_7_1BBDD {
 		return con;
 	}
 
-	public void hacerAlgoEnLaTablaConSentenciaString(String sentencia, Connection con) {
+	public void executeQuerySQL(String sentencia, Connection con) {
 		Statement st = null;
 		try {
 			st = con.createStatement();

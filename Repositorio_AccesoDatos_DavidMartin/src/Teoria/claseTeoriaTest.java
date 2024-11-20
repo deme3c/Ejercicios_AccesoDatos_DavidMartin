@@ -1,4 +1,4 @@
-package Tema2;
+package Teoria;
 
 import org.junit.jupiter.api.Test;
 

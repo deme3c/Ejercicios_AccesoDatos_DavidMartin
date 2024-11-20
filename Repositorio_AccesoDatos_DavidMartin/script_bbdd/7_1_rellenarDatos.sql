@@ -1,4 +1,4 @@
-INSERT INTO Ejercicio_7_1 (id, descripcion, fecha_inicio, fecha_fin, finalizada) VALUES
+INSERT INTO ejercicio_7_1 (id, descripcion, fecha_inicio, fecha_fin, finalizada) VALUES
 (1, 'Comprar manzanas', '2024-02-15', '2024-02-16', true),
 (2, 'Estudiar examen', '2024-05-02', '2024-05-18', true),
 (3, 'Comprar billete para Sidney', '2024-02-15', '2024-05-20', true),
