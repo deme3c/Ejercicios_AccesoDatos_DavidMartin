@@ -73,45 +73,4 @@ public class Ejercicio_3_2_1 {
 	}
 }
 
-class Coche implements java.io.Serializable {
 
-	private static final long serialVersionUID = 1L;
-	String matricula;
-	String marca;
-	int yearMatriculacion;
-
-	public Coche(String matricula, String marca, int anyoMatriculacion) {
-		this.matricula = matricula;
-		this.marca = marca;
-		this.yearMatriculacion = anyoMatriculacion;
-	}
-
-	public String getMatricula() {
-		return matricula;
-	}
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public int getAnyoMatriculacion() {
-		return yearMatriculacion;
-	}
-
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
-	public void setAnyoMatriculacion(int anyoMatriculacion) {
-		this.yearMatriculacion = anyoMatriculacion;
-	}
-
-	@Override
-	public String toString() {
-		return "Coche [matricula=" + matricula + ", marca=" + marca + ", anyoMatriculacion=" + yearMatriculacion + "]";
-	}
-}
