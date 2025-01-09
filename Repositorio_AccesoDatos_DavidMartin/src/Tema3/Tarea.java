@@ -1,13 +1,15 @@
 package Tema3;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Tarea {
 
 	private int id;
 	private String descripcion;
-	private String fechaInicio;
-	private String fechaFin;
+	private Date fechaInicio;
+	private Date fechaFin;
 	private boolean finalizada;
 	private TipoTarea tipoTarea;
 	
@@ -15,8 +17,20 @@ public class Tarea {
 		super();
 		this.id = id;
 		this.descripcion = descripcion;
-		this.fechaInicio = fechaInicio;
-		this.fechaFin = fechaFin;
+		
+		try {
+			this.fechaInicio = new SimpleDateFormat("yyyy-MM-dd").parse(fechaInicio);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			this.fechaFin = new SimpleDateFormat("yyyy-MM-dd").parse(fechaFin);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 		this.finalizada = finalizada;
 		this.tipoTarea = tipoTarea;
 	}
@@ -37,19 +51,19 @@ public class Tarea {
 		this.descripcion = descripcion;
 	}
 
-	public String getFechaInicio() {
+	public Date getFechaInicio() {
 		return fechaInicio;
 	}
 
-	public void setFechaInicio(String fechaInicio) {
+	public void setFechaInicio(Date fechaInicio) {
 		this.fechaInicio = fechaInicio;
 	}
 
-	public String getFechaFin() {
+	public Date getFechaFin() {
 		return fechaFin;
 	}
 
-	public void setFechaFin(String fechaFin) {
+	public void setFechaFin(Date fechaFin) {
 		this.fechaFin = fechaFin;
 	}
 

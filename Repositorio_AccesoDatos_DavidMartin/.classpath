@@ -8,6 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-j-9.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/dmart/DAM/AccesoDatos/Repositorio_AccesoDatos_DavidMartin/lib/neodatis-odb-1.9.30.689.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Usuario/AccesoDatos/Ejercicios_AccesoDatos_DavidMartin/Repositorio_AccesoDatos_DavidMartin/lib/neodatis-odb-1.9.30.689.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
